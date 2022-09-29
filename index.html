@@ -10,8 +10,13 @@
 <body>
 
   <div class="prod-card-container">
-    <img class="flex-img" src="images/image-product-mobile.jpg" alt="Perfume Mobile">
-    <img class="grid-img" src="images/image-product-desktop.jpg" alt="Perfume Desktop">
+    <picture>
+      <source  srcset="images/image-product-mobile.jpg">
+      <source  media="(min-width: 600px)"
+              srcset="images/image-product-desktop.jpg">
+      <img class="perfume-pic" src="images/image-product-mobile.jpg" alt="A bottle of high-end perfume">
+    </picture>
+         
     
       <div class="product-card-info">
         <p class="caps">Perfume</p>

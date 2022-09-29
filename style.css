@@ -50,6 +50,14 @@ h1:first-child {
   margin-bottom: 2.2rem;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.perfume-pic {
+  border-radius: 12px 12px 0 0;
+}
 
 .prod-card-container {
   margin: 3rem auto 0;
@@ -91,9 +99,7 @@ p:nth-of-type(2) {
 
 }
 
-img:nth-of-type(2) {
-  display: none;
-}
+
 
 
 
@@ -156,18 +162,16 @@ img:nth-of-type(2) {
     justify-content: center;
   }
 
-  .flex-img {
-    display: none;
+  .perfume-pic {
+    border-radius: 12px 0 0 12px;
+    max-width: 100%;
   }
 
-  img:nth-of-type(2) {
-    display: initial;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 0px;
-    grid-row: 1 / 4;
+  picture {
+    grid-row: 1 / 5
   }
+
+  
 
   
 }
